@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workout Timer App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container active">
+        <button id="enable-sound-button">Enable Sound</button>
+        <div>
+            <h2>Total Workout Duration</h2>
+            <input type="number" id="total-minutes" placeholder="Minutes" min="0">
+            <input type="number" id="total-seconds" placeholder="Seconds" min="0" max="59">
+        </div>
+        <div>
+            <h2>Exercise Interval</h2>
+            <input type="number" id="exercise-minutes" placeholder="Minutes" min="0">
+            <input type="number" id="exercise-seconds" placeholder="Seconds" min="0" max="59">
+        </div>
+        <div>
+            <h2>Rest Interval</h2>
+            <input type="number" id="rest-minutes" placeholder="Minutes" min="0">
+            <input type="number" id="rest-seconds" placeholder="Seconds" min="0" max="59">
+        </div>
+        <button id="start-button">Start Workout</button>
+        <div id="countdown-display" class="message"></div>
+    </div>
+
+    <div class="timer-screen">
+        <div class="message" id="timer-message">Ready</div>
+        <div class="timer" id="timer-display">00:00</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
