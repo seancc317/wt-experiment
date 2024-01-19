@@ -17,6 +17,9 @@ body {
     width: 90%;
     max-width: 400px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input[type="number"] {
@@ -26,6 +29,7 @@ input[type="number"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    text-align: center;
 }
 
 button {
@@ -38,6 +42,7 @@ button {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s, box-shadow 0.3s;
+    width: auto;
 }
 
 button:hover {
@@ -55,6 +60,18 @@ label {
     margin: 10px 0 5px;
 }
 
+.message {
+    font-size: 24px;
+    margin: 20px;
+    color: #2c3e50;
+}
+
+.timer {
+    font-size: 36px;
+    margin: 10px;
+    color: #27ae60;
+}
+
 /* Responsive design adjustments */
 @media (max-width: 768px) {
     .container {
@@ -62,8 +79,8 @@ label {
         margin: 10px;
     }
     
-    input[type="number"] {
-        width: 80px; /* Smaller width on mobile */
+    input[type="number"], button {
+        width: calc(50% - 10px); /* Adjust input and button width on smaller screens */
     }
     
     label {
